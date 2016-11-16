@@ -1,0 +1,32 @@
+{
+    "name": "suncky/yii-ueditor",
+    "description": "Yii2 extension widget",
+    "type": "yii2-extension",
+    "license": "GPL2.0",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "suncky",
+            "email": "sxz58ba@163.com"
+        }
+    ],
+    "extra" : {
+        "asset-ignore-files": {
+            "bower-asset/ueditor-ext": [
+                "src",
+                ".*",
+                "build.conf.json",
+                "Gruntfile.js",
+                "package.json"
+            ]
+        }
+    },
+    "require": {
+        "php": ">=5.5.0",
+        "yiisoft/yii2": ">=2.0.6",
+        "bower-asset/ueditor-ext": "~1.0"
+    },
+    "autoload": {
+        "psr-4": {"suncky\\yii\\widgets\\ueditor\\": "src/"}
+    }
+}
